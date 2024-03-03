@@ -1,0 +1,50 @@
+/* about-me */
+.about-me{
+  padding: 1rem;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.about-me,.projects h1{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section label {
+  font-weight: bold;
+}
+
+.section input[type="text"],
+.section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: rgb(36, 36, 36);
+}
+
+.section textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+.save-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.save-btn:hover {
+  background-color: #333;
+}
+
+.success-msg{
+  color: green;
+  font-size: 0.9em;
+  display: none;
+}

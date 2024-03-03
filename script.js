@@ -17,3 +17,29 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navlist.classList.remove('active');
 };
+
+
+
+
+
+
+(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+      publicKey: "S5XOmpMHgiYlEJRgs",
+    });
+})();
+
+
+window.onload = function() {
+    form = document.getElementById('contact-form-form');
+    document.getElementById('contact-form-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('contact_service', 'contact_form', this)
+            .then(() => {
+                form.reset();
+                console.log('SUCCESS!');
+            }, (error) => {
+              console.log('FAILED...', error);
+            });
+    });}

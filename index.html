@@ -22,6 +22,7 @@ rel="stylesheet"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
 <body>
@@ -36,8 +37,9 @@ rel="stylesheet"/>
           <li> <a href="#home">Home</a> </li>
           <li> <a href="#about">About</a> </li>
           <li> <a href="#services">Services</a> </li>
-          <li> <a href="#portfolio">Portfolio</a> </li>
+          <li> <a href="#portfolio">Project</a> </li>
           <li> <a href="#contact">Contact</a> </li>
+          <li> <a href="login.html">Login</a> </li>
       </ul>
 
       <div class="top-btnn">
@@ -52,9 +54,11 @@ rel="stylesheet"/>
      <div class="main-content">
         <h4>Hi, There!</h4>
         <h1>I'm <span>MD ARIFUL ISLAM</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            fames turpis pretium bibendum nisl est sagittis aliquam
-            pretium.</p>
+        <p>I specialize in web development, crafting dynamic 
+            and user-friendly websites to meet diverse client 
+            needs. Proficient in various programming languages 
+            and frameworks, I am dedicated to creating seamless
+             online experiences.</p>
             <div class="socail">
                 <a href="#"><i class="ri-facebook-fill"></i></a>
                 <a href="#"><i class="ri-instagram-fill"></i></a>
@@ -79,7 +83,7 @@ rel="stylesheet"/>
         <div class="exp-area">
             <p class="exp">
                Experience
-               <span>12 Years</span>
+               <span>1 Year</span>
             </p>
 
             <p class="exp">
@@ -89,7 +93,7 @@ rel="stylesheet"/>
 
              <p class="exp">
                 Address:
-                <span>Sylhet, Bangladesh</span>
+                <span>Khulna, Bangladesh</span>
              </p>
 
              <p class="exp">
@@ -164,7 +168,7 @@ rel="stylesheet"/>
 <!---portfolio-->
 <section class="portfolio " id="portfolio">
     <div class="center-text raiax">
-        <h2>My <span>Portfolio</span></h2>
+        <h2>My <span>Project</span></h2>
     </div>
 
     <div class="Portfolio-content services-content">
@@ -260,10 +264,10 @@ rel="stylesheet"/>
     </div> 
 
     <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Your name" required>
-            <input type="text" placeholder="Email Address.." required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Messeage Here.."
+        <form action="submit_msg.php" method="post" id="contact-form-form">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="text" name="email" placeholder="Email Address.." required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Write Messeage Here.."
             required></textarea>
             <input type="submit" name="" value="Send Message" class="send-btn">
         </form>
